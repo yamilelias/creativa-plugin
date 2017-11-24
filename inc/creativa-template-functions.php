@@ -17,35 +17,43 @@ if ( ! function_exists( 'creativa_recent_products' ) ) {
      */
     function creativa_recent_products( $args ) {
 
-        if ( is_woocommerce_activated() ) {
+        if ( storefront_is_woocommerce_activated() ) {
 
-            $args = apply_filters( 'creativa_recent_products_args', array(
+            $args = apply_filters( 'storefront_recent_products_args', array(
                 'limit' 			=> 4,
                 'columns' 			=> 4,
-                'title'				=> __( 'New In', 'creativa' ),
+                'title'				=> __( 'New In', 'storefront' ),
             ) );
 
-            $shortcode_content = do_shortcode( 'recent_products', array(
+            $shortcode_content = storefront_do_shortcode( 'recent_products', apply_filters( 'storefront_recent_products_shortcode_args', array(
                 'per_page' => intval( $args['limit'] ),
                 'columns'  => intval( $args['columns'] ),
-            ) );
+            ) ) );
 
             /**
              * Only display the section if the shortcode returns products
              */
-            echo '<div class="foody-home-product">';
+            if ( false !== strpos( $shortcode_content, 'product' ) ) {
 
-            do_action( 'creativa_homepage_before_recent_products' );
+                echo '<section class="storefront-product-section storefront-recent-products" aria-label="' . esc_attr__( 'Recent Products', 'storefront' ) . '">';
 
-            echo '<h1 class="home_prodct_titl">' . esc_html(get_theme_mod("recent_product_titl")) . '</h1>';
+                do_action( 'storefront_homepage_before_recent_products' );
 
-            do_action( 'storefront_homepage_after_recent_products_title' );
+                echo '<h2 class="section-title">' . wp_kses_post( $args['title'] ) . '</h2>';
 
-            echo wp_kses_post( $shortcode_content );
+                do_action( 'storefront_homepage_after_recent_products_title' );
 
-            do_action( 'creativa_homepage_after_recent_products' );
+                echo '<div class="owl-carousel">';
 
-            echo '</div>';
+                echo $shortcode_content;
+
+                echo '</div>';
+
+                do_action( 'storefront_homepage_after_recent_products' );
+
+                echo '</section>';
+
+            }
         }
     }
 }
