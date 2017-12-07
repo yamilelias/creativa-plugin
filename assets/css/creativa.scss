@@ -9,8 +9,26 @@
 @import "config";
 @import "mixins";
 
+/**
+ * General
+ */
+
+a {
+  .scrollup {
+    &:hover {
+      color: $primary-blue;
+    }
+  }
+}
+
+/**
+ * Header and navigation
+ */
+
 .header-wrap {
   .search-cart-wrap {
+    margin-top: 50px;
+
     .advance-search {
       .sv_search_form {
         #searchsubmit {
@@ -21,15 +39,27 @@
   }
 }
 
-.top-header-regin {
-  ul {
-    li {
-      span {
-        .cart-count {
-          background: $primary-blue none repeat scroll 0 0;
+.top-header {
+  .top-header-regin {
+    ul {
+      li {
+        span {
+          &.cart-count {
+            background: $primary-blue none repeat scroll 0 0 !important;
 
+            &:hover{
+              background: $primary-blue !important;
+            }
+          }
+        }
+      }
+    }
+
+    .count {
+      .fa{
+        &.fa-shopping-basket{
           &:hover{
-            background: $primary-blue;
+            color: $primary-blue;
           }
         }
       }
@@ -40,12 +70,12 @@
 .site-header-cart {
   .woocommerce {
     a {
-      .button {
-        .wc-forward {
+      &.button {
+        &.wc-forward {
           @include background-border($primary-blue);
         }
 
-        .checkout {
+        &.checkout {
           @include background-border($primary-yellow);
         }
       }
@@ -69,6 +99,10 @@
     color: $primary-blue !important;
   }
 }
+
+/**
+ * Body
+ */
 
 .site-content {
   .slider-wrapper {
@@ -96,15 +130,9 @@
 
 .item-img {
   .new-label {
-    .new-top-left {
+    &.new-top-left {
       @include background-border($primary-yellow);
-    }
-  }
-}
 
-.item-img {
-  .new-label {
-    .new-top-left {
       &:before {
         border-color: transparent transparent transparent $primary-yellow;
       }
@@ -114,28 +142,77 @@
 
 .product-button-wrap {
   a {
-    .button, .product-button-wrap a.added_to_cart {
+    &.button, &.added_to_cart {
       @include background-border($primary-blue);
     }
-  }
-}
 
-.product-button-wrap {
-  a {
-    .villa-details {
+    &.villa-details {
       @include background-border($primary-yellow);
     }
   }
 }
 
+/**
+ * Footer
+ */
+
 .site-footer {
   .bottom-footer-wrap {
     background: $primary-blue;
   }
-}
-
-.site-footer {
   .site-info {
     color: white;
+  }
+}
+
+/**
+ * Product view
+ */
+
+.store-container {
+  #primary {
+    width: 100%;
+  }
+}
+
+.woocommerce {
+  div{
+    &.product {
+      p, span{
+        &.price{
+          color: $primary-yellow;
+        }
+      }
+    }
+  }
+
+  button {
+    @include background-border($primary-blue);
+
+    &.button {
+      background: $primary-blue;
+    }
+  }
+
+  #respond {
+    input {
+      &#submit {
+        &.alt {
+          &:hover {
+            $background: $primary-blue;
+          }
+        }
+      }
+    }
+  }
+
+  a, button, input {
+    &.button {
+      &.alt {
+        &:hover{
+          $background: $primary-blue;
+        }
+      }
+    }
   }
 }
