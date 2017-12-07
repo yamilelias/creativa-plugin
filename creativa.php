@@ -3,7 +3,7 @@
 /**
 Plugin Name: Creativa Plugin
 Plugin URI: https://github.com/yamilelias/anchor-menu-plugin
-Description: This plugin is to add functionality and to customize the Theme installed for Creativa  .
+Description: This plugin is to add functionality and to customize the Theme installed for Creativa.
 Version: 1.0.0
 Author: Yamil Elías
 Author URI: https://yamilelias.github.io
@@ -11,8 +11,11 @@ License: GPLv3
  */
 
 
-if( ! class_exists( 'creativa' ) ) {
-    class creativa {
+if( ! class_exists( 'Creativa' ) ) {
+
+    add_action( 'init', array( 'Creativa', 'instantiate' ), 0 );
+
+    class Creativa {
         /**
          * Reusable object instance.
          *
@@ -44,11 +47,9 @@ if( ! class_exists( 'creativa' ) ) {
          * @since 1.0.0
          */
         public function __construct() {
-
             $this->define_constants();
             $this->includes();
             // that's it!
-
         }
 
         /**

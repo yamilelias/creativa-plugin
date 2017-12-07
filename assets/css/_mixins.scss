@@ -5,3 +5,8 @@
  * Date: 7/12/17
  * Time: 10:19 AM
  */
+
+@mixin background-border($color) {
+  background: $color;
+  border-color: $color;
+}

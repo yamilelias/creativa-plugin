@@ -42,13 +42,11 @@
     a {
       .button {
         .wc-forward {
-          background: $primary-blue;
-          border-color: $primary-blue;
+          @include background-border($primary-blue);
         }
 
         .checkout {
-          background: $primary-yellow;
-          border-color: $primary-yellow;
+          @include background-border($primary-yellow);
         }
       }
     }
@@ -99,8 +97,7 @@
 .item-img {
   .new-label {
     .new-top-left {
-      background: $primary-yellow;
-      border-color: $primary-yellow;
+      @include background-border($primary-yellow);
     }
   }
 }
@@ -118,8 +115,7 @@
 .product-button-wrap {
   a {
     .button, .product-button-wrap a.added_to_cart {
-      background: $primary-blue;
-      border-color: $primary-blue;
+      @include background-border($primary-blue);
     }
   }
 }
@@ -127,8 +123,7 @@
 .product-button-wrap {
   a {
     .villa-details {
-      background: $primary-yellow;
-      border-color: $primary-yellow;
+      @include background-border($primary-yellow);
     }
   }
 }
