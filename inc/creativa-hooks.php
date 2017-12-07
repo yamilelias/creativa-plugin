@@ -6,4 +6,4 @@
  * Time: 12:58 PM
  */
 
-add_action('creativa_recent_products', 'creativa_recent_products');
+add_action('wp_enqueue_scripts', 'creativa_styles_and_scripts');

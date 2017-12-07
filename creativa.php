@@ -3,7 +3,7 @@
 /**
 Plugin Name: Creativa Plugin
 Plugin URI: https://github.com/yamilelias/anchor-menu-plugin
-Description: This plugin is to add functionality and to customize the Foody Theme.
+Description: This plugin is to add functionality and to customize the Theme installed for Creativa  .
 Version: 1.0.0
 Author: Yamil Elías
 Author URI: https://yamilelias.github.io

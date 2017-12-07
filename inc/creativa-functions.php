@@ -6,13 +6,11 @@
  * Time: 12:58 PM
  */
 
-if ( ! function_exists( 'is_woocommerce_activated' ) ) {
-    /**
-     * Query WooCommerce activation
-     */
-    function is_woocommerce_activated() {
-        return class_exists( 'WooCommerce' ) ? true : false;
-    }
+/**
+ * Query WooCommerce activation
+ */
+function is_woocommerce_activated() {
+    return class_exists( 'WooCommerce' ) ? true : false;
 }
 
 /**
@@ -34,4 +32,13 @@ function do_shortcode( $tag, array $atts = array(), $content = null ) {
     }
 
     return call_user_func( $shortcode_tags[ $tag ], $atts, $content, $tag );
+}
+
+/**
+ * Include the styles and scripts for this plugin.
+ *
+ * @since 1.0.0
+ */
+function creativa_styles_and_scripts() {
+
 }
