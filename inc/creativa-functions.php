@@ -40,5 +40,5 @@ function do_shortcode( $tag, array $atts = array(), $content = null ) {
  * @since 1.0.0
  */
 function creativa_styles_and_scripts() {
-
+    wp_enqueue_style('creativa-css', CREATIVA_ABSPATH . 'assets/css/creativa.css');
 }

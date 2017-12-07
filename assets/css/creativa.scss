@@ -8,3 +8,139 @@
 
 @import "config";
 @import "mixins";
+
+.header-wrap {
+  .search-cart-wrap {
+    .advance-search {
+      .sv_search_form {
+        #searchsubmit {
+          background: $primary-blue;
+        }
+      }
+    }
+  }
+}
+
+.top-header-regin {
+  ul {
+    li {
+      span {
+        .cart-count {
+          background: $primary-blue none repeat scroll 0 0;
+
+          &:hover{
+            background: $primary-blue;
+          }
+        }
+      }
+    }
+  }
+}
+
+.site-header-cart {
+  .woocommerce {
+    a {
+      .button {
+        .wc-forward {
+          background: $primary-blue;
+          border-color: $primary-blue;
+        }
+
+        .checkout {
+          background: $primary-yellow;
+          border-color: $primary-yellow;
+        }
+      }
+    }
+  }
+}
+
+.main-navigation {
+  background: $primary-blue;
+
+  ul {
+    ul {
+      background: $primary-blue;
+    }
+  }
+}
+
+.main-widget-wrap {
+  .block-title span, .block-title span {
+    font-size: xx-large;
+    color: $primary-blue !important;
+  }
+}
+
+.site-content {
+  .slider-wrapper {
+    ul {
+      .store-gallery {
+        li {
+          .banner-slider-info {
+            h2 {
+              .caption-title {
+                span {
+                  color: $primary-yellow;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#category-product-slider {
+  background-image: url(http://localhost/content/uploads/2017/12/fondo_focos-1.png);
+}
+
+.item-img {
+  .new-label {
+    .new-top-left {
+      background: $primary-yellow;
+      border-color: $primary-yellow;
+    }
+  }
+}
+
+.item-img {
+  .new-label {
+    .new-top-left {
+      &:before {
+        border-color: transparent transparent transparent $primary-yellow;
+      }
+    }
+  }
+}
+
+.product-button-wrap {
+  a {
+    .button, .product-button-wrap a.added_to_cart {
+      background: $primary-blue;
+      border-color: $primary-blue;
+    }
+  }
+}
+
+.product-button-wrap {
+  a {
+    .villa-details {
+      background: $primary-yellow;
+      border-color: $primary-yellow;
+    }
+  }
+}
+
+.site-footer {
+  .bottom-footer-wrap {
+    background: $primary-blue;
+  }
+}
+
+.site-footer {
+  .site-info {
+    color: white;
+  }
+}
