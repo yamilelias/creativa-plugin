@@ -1,0 +1,112 @@
+/**
+ * creativa file
+ * User: yamilelias
+ * Author URI: <yamileliassoto@gmail.com>
+ * Date: 7/12/17
+ * Time: 10:18 AM
+ */
+/**
+ * _config file
+ * User: yamilelias
+ * Author URI: <yamileliassoto@gmail.com>
+ * Date: 7/12/17
+ * Time: 10:19 AM
+ */
+/**
+ * _mixins file
+ * User: yamilelias
+ * Author URI: <yamileliassoto@gmail.com>
+ * Date: 7/12/17
+ * Time: 10:19 AM
+ */
+/**
+ * General
+ */
+a .scrollup:hover {
+  color: #00A3A3; }
+
+/**
+ * Header and navigation
+ */
+.header-wrap .search-cart-wrap {
+  margin-top: 50px; }
+  .header-wrap .search-cart-wrap .advance-search .sv_search_form #searchsubmit {
+    background: #00A3A3; }
+    .header-wrap .search-cart-wrap .advance-search .sv_search_form #searchsubmit:hover {
+      background: #F5B334; }
+
+.top-header .top-header-regin ul li span.cart-count {
+  background: #00A3A3 none repeat scroll 0 0 !important; }
+  .top-header .top-header-regin ul li span.cart-count:hover {
+    background: #F5B334 !important; }
+.top-header .top-header-regin .count .fa.fa-shopping-basket:hover {
+  color: #00A3A3; }
+
+.site-header-cart .woocommerce a.button.wc-forward {
+  background: #00A3A3;
+  border-color: #00A3A3; }
+.site-header-cart .woocommerce a.button.checkout {
+  background: #F5B334;
+  border-color: #F5B334; }
+
+.main-navigation {
+  background: #00A3A3; }
+  .main-navigation ul ul {
+    background: #00A3A3; }
+  .main-navigation ul li ul li:hover a {
+    color: #00A3A3; }
+
+.main-widget-wrap .block-title span, .main-widget-wrap .block-title span {
+  font-size: xx-large;
+  color: #00A3A3 !important; }
+
+.widget_storevilla_blog_widget_area .blog-preview a.blog-preview-btn:hover, .widget_storevilla_blog_widget_area .large-blog-preview a.blog-preview-btn:hover {
+  background: #00A3A3;
+  border-color: #00A3A3; }
+
+/**
+ * Body
+ */
+.site-content .slider-wrapper ul .store-gallery li .banner-slider-info h2 .caption-title span {
+  color: #F5B334; }
+
+.item-img .new-label.new-top-left {
+  background: #F5B334;
+  border-color: #F5B334; }
+  .item-img .new-label.new-top-left:before {
+    border-color: transparent transparent transparent #F5B334; }
+
+.product-button-wrap a.button, .product-button-wrap a.added_to_cart {
+  background: #00A3A3;
+  border-color: #00A3A3; }
+.product-button-wrap a.villa-details {
+  background: #F5B334;
+  border-color: #F5B334; }
+
+/**
+ * Footer
+ */
+footer {
+  padding-top: 100px;
+  background-image: url("../img/footer_focos.png"); }
+
+.site-footer .bottom-footer-wrap {
+  background: #00A3A3; }
+.site-footer .site-info {
+  color: white; }
+
+/**
+ * Product view
+ */
+.store-container #primary {
+  width: 100%; }
+
+.woocommerce div.product p.price, .woocommerce div.product span.price {
+  color: #F5B334; }
+.woocommerce button {
+  background: #00A3A3;
+  border-color: #00A3A3; }
+  .woocommerce button.button {
+    background: #00A3A3; }
+
+/*# sourceMappingURL=creativa.css.map */

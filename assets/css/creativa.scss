@@ -33,6 +33,10 @@ a {
       .sv_search_form {
         #searchsubmit {
           background: $primary-blue;
+
+          &:hover {
+            background: $primary-yellow;
+          }
         }
       }
     }
@@ -90,6 +94,18 @@ a {
     ul {
       background: $primary-blue;
     }
+
+    li {
+      ul {
+        li {
+          &:hover{
+            a {
+              color: $primary-blue;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
@@ -97,6 +113,18 @@ a {
   .block-title span, .block-title span {
     font-size: xx-large;
     color: $primary-blue !important;
+  }
+}
+
+.widget_storevilla_blog_widget_area {
+  .blog-preview, .large-blog-preview {
+    a {
+      &.blog-preview-btn{
+        &:hover {
+          @include background-border($primary-blue);
+        }
+      }
+    }
   }
 }
 
@@ -151,6 +179,11 @@ a {
 /**
  * Footer
  */
+
+footer {
+  padding-top: 100px;
+  background-image: url('../img/footer_focos.png');
+}
 
 .site-footer {
   .bottom-footer-wrap {
