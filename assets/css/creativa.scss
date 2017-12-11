@@ -48,7 +48,7 @@ a {
             background: $primary-blue none repeat scroll 0 0 !important;
 
             &:hover{
-              background: $primary-blue !important;
+              background: $primary-yellow !important;
             }
           }
         }
@@ -122,10 +122,6 @@ a {
       }
     }
   }
-}
-
-#category-product-slider {
-  background-image: url(http://localhost/content/uploads/2017/12/fondo_focos-1.png);
 }
 
 .item-img {

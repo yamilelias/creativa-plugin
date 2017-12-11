@@ -28,6 +28,11 @@ function creativa_styles_and_scripts() {
  * @since 1.0.0
  */
 function creativa_homepage_content() {
-    $post = get_post();
-    echo $post->post_content;
+    if ( have_posts() ) {
+        while ( have_posts() ) {
+            the_post();
+
+            the_content();
+        } // end while
+    } // end if
 }
