@@ -28,6 +28,8 @@ a .scrollup:hover {
 /**
  * Header and navigation
  */
+.header-wrap .site-branding .site-title a {
+  color: #00A3A3; }
 .header-wrap .search-cart-wrap {
   margin-top: 50px; }
   .header-wrap .search-cart-wrap .advance-search .sv_search_form #searchsubmit {

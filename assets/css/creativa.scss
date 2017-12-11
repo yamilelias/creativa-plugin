@@ -26,6 +26,14 @@ a {
  */
 
 .header-wrap {
+  .site-branding {
+    .site-title {
+      a {
+        color: $primary-blue;
+      }
+    }
+  }
+
   .search-cart-wrap {
     margin-top: 50px;
 
