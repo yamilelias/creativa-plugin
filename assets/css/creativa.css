@@ -62,9 +62,27 @@ a .scrollup:hover {
   font-size: xx-large;
   color: #00A3A3 !important; }
 
+.widget_storevilla_cat_widget_area .category-slider li .item-img a:hover .sv_category_count {
+  background-color: #F5B334; }
+
 .widget_storevilla_blog_widget_area .blog-preview a.blog-preview-btn:hover, .widget_storevilla_blog_widget_area .large-blog-preview a.blog-preview-btn:hover {
   background: #00A3A3;
   border-color: #00A3A3; }
+
+#storevilla_contact_info_area-2 h4 {
+  font-family: Open Sans;
+  font-size: xx-large;
+  color: #00A3A3 !important; }
+#storevilla_contact_info_area-2 .contacts-info {
+  margin-left: 10em;
+  margin-right: -10em; }
+  #storevilla_contact_info_area-2 .contacts-info a {
+    color: #00A3A3; }
+    #storevilla_contact_info_area-2 .contacts-info a:hover {
+      color: #F5B334; }
+  #storevilla_contact_info_area-2 .contacts-info span:hover {
+    background: #00A3A3;
+    border-color: #00A3A3; }
 
 /**
  * Body

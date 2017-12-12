@@ -124,6 +124,22 @@ a {
   }
 }
 
+.widget_storevilla_cat_widget_area {
+  .category-slider {
+    li {
+      .item-img {
+        a {
+          &:hover {
+            .sv_category_count{
+              background-color: $primary-yellow;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 .widget_storevilla_blog_widget_area {
   .blog-preview, .large-blog-preview {
     a {
@@ -131,6 +147,34 @@ a {
         &:hover {
           @include background-border($primary-blue);
         }
+      }
+    }
+  }
+}
+
+#storevilla_contact_info_area-2 {
+  h4 {
+    //text-decoration: capi;
+    font-family: Open Sans;
+    font-size: xx-large;
+    color: #00A3A3 !important;
+  }
+
+  .contacts-info {
+    margin-left: 10em;
+    margin-right: -10em;
+
+    a {
+      color: $primary-blue;
+
+      &:hover {
+        color: $primary-yellow;
+      }
+    }
+
+    span {
+      &:hover {
+        @include background-border($primary-blue);
       }
     }
   }
