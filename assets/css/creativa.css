@@ -121,6 +121,14 @@ footer {
 .store-container #primary {
   width: 100%; }
 
+.woocommerce div.product .woocommerce-tabs ul.tabs li.active, .woocommerce div.product .woocommerce-tabs ul.tabs li:hover {
+  background: #00A3A3; }
+.woocommerce div.product .woocommerce-tabs.wc-tabs-wrapper h2 {
+  color: #00A3A3; }
+.woocommerce div.product .woocommerce-tabs p.stars a {
+  color: #00A3A3; }
+.woocommerce div.product form.cart div.quantity {
+  border: 1px solid #00A3A3; }
 .woocommerce div.product p.price, .woocommerce div.product span.price {
   color: #F5B334; }
 .woocommerce button {
@@ -128,5 +136,7 @@ footer {
   border-color: #00A3A3; }
   .woocommerce button.button {
     background: #00A3A3; }
+.woocommerce #respond input#submit {
+  border: 1px solid #00A3A3; }
 
 /*# sourceMappingURL=creativa.css.map */

@@ -259,6 +259,43 @@ footer {
 .woocommerce {
   div{
     &.product {
+
+      .woocommerce-tabs {
+        ul{
+          &.tabs {
+            li {
+              &.active, &:hover{
+                background: $primary-blue;
+              }
+            }
+          }
+        }
+
+        &.wc-tabs-wrapper {
+          h2 {
+            color: $primary-blue;
+          }
+        }
+
+        p {
+          &.stars{
+            a {
+              color: $primary-blue;
+            }
+          }
+        }
+      }
+
+      form {
+        &.cart {
+          div {
+            &.quantity {
+              border: 1px solid $primary-blue;
+            }
+          }
+        }
+      }
+
       p, span{
         &.price{
           color: $primary-yellow;
@@ -278,10 +315,20 @@ footer {
   #respond {
     input {
       &#submit {
+        border: 1px solid $primary-blue;
+
         &.alt {
           &:hover {
             $background: $primary-blue;
           }
+        }
+      }
+    }
+
+    .woocommerce {
+      a {
+        &.button {
+          $background: $primary-blue;
         }
       }
     }
